@@ -1,0 +1,86 @@
+.boundary {
+  background-color: rgb(131, 128, 129);
+  border: 2px solid black;
+  margin: 10px;
+  padding: 10 px 10 px;
+}
+.imgBox {
+  border: 2 px solid pink;
+  margin: 5 px 10 px;
+  padding: 2 px 2 px;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 3px;
+}
+/* h1 {
+    padding: 2px;
+  } */
+h1#headline {
+  font-size: large;
+  font-family: inherit;
+  font-weight: bolder;
+  padding: 5px;
+  text-align: center;
+}
+h4 {
+  font-family: inherit;
+  font-weight: 600;
+  text-align: center;
+}
+p {
+  text-align: center;
+}
+button {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border: 3px solid #313437;
+  border-radius: 2px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  color: #5cce78;
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  margin:10px 30%;
+}
+
+button:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  opacity: 0;
+  content: "";
+  background-color: #e1c45c;
+  z-index: -1;
+}
+
+button:hover,
+button:focus {
+  color: rgb(80, 64, 64);
+}
+
+button:hover:before,
+button:focus:before {
+  transition: 0.5s all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+button:active {
+  transform: scale(0.9);
+}
+h5 {
+  text-align: center;
+  margin-bottom: 15 px;
+}
